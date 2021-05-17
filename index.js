@@ -10,7 +10,7 @@ bot.on("message", (msg) => {
     chat: { id },
   } = msg;
 
-  if (msg.from.first_name.toLowerCase() !== "fox") {
+  if (msg.from.first_name.toLowerCase() !== "eugene") {
     let random = Math.floor(Math.random() * 100);
     if (random <= 30) {
       bot.sendMessage(id, msg.from.first_name + " krab");
